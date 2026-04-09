@@ -272,7 +272,122 @@ export default function MyApp() {
 function MyButton({ count, onClick }) {
   return (
     <button onClick={onClick}>
-    Clicked {count} times
+      Clicked {count} times
+    </button>
+  );
+}
+
+// Writing Markup with JSX
+export default function TodoList() {
+  return (
+    <>
+      <h1>Todo Lists</h1>
+      <ul>
+        <li>Invent new traffic lights</li>
+        <li>Rehearse a movie scene</li>
+        <li>Improve spectrum technology</li>
+      </ul>
+    </>
+  )
+}
+
+TodoList();
+
+// Conditional Rendering
+function Item({ name, isPacked }) {
+  return (
+    <li className="item">
+      {name} {isPacked && '✅'}
+    </li>
+  );
+}
+
+export default function PackingList() {
+  return (
+    <section>
+      <h1>Sally Ride's Packing List</h1>
+      <ul>
+        <Item
+          isPacked={true}
+          name="Space suit"
+        />
+        <Item
+          isPacked={true}
+          name="Helmet with a golden leaf"
+        />
+        <Item
+          isPacked={false}
+          name="Photo of Tam"
+        />
+      </ul>
+    </section>
+  );
+}
+
+PackingList();
+
+// // Keeping Components pure
+// let guest = 0;
+
+// function Cup() {
+//   guest = guest + 1;
+//   return (
+//     <h2>Tea cup for guest #{guest}</h2>
+//   )
+// }
+
+// export default function TeaSet(){
+//   return (
+//     <>
+//       <Cup />
+//       <Cup />
+//       <Cup />
+//     </>
+//   );
+// }
+
+// By using Props in Pure Components
+function Cup ({ guest }) {
+  return (
+    <h2>Tea cup for guest #{guest}</h2>
+  )
+}
+
+export default function TeaSet(){
+  return(
+    <>
+      <Cup guest={1} />
+      <Cup guest={2} />
+      <Cup guest={3} />
+    </>
+  )
+}
+
+// Responding to events
+export default function App(){
+  return (
+    <Toolbar
+    onPlayMovie={() => alert("Playing")}
+    onUploadImage={() => alert("Uploading")}
+    />
+  );
+}
+
+function Toolbar({ onPlayMovie, onUploadImage }) {
+  return (
+    <div>
+      <Button onClick={onPlayMovie}>Play Movie</Button>
+      <Button onClick={onUploadImage}>
+        Upload Image
+      </Button>
+    </div>
+  );
+}
+
+function Button({ onClick, children }) {
+  return (
+    <button onClick={onClick}>
+      {children}
     </button>
   );
 }
