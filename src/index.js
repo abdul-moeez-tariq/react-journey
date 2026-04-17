@@ -11,7 +11,7 @@ import "./index.css";
 // import Student from "./Student";
 // import StudentTwo from "./Student";
 
-import States from "./States"
+// import States from "./States"
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -33,7 +33,7 @@ root.render(
       {/* <StudentTwo name="Abdul Moeez" /> */}
 
       {/* States in React */}
-      <States />
+      {/* <States /> */}
     </React.StrictMode>
   </>,
 );
