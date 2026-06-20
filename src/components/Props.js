@@ -9,8 +9,8 @@ function Props() {
   return (
     <>
       {/* Props in React */}
-      <Person name="Abdul Moeez Tariq" age="24" />
-      <Person name="Rameez Tariq" age="22" />
+      <Person name="Abdul Moeez Tariq" age={24} />
+      {/* <Person name="Rameez Tariq" age={22} /> */}
       {/* <Person name={personName} age={personAge} /> */}
     </>
   );

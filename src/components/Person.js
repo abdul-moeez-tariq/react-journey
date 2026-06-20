@@ -1,5 +1,6 @@
-// export to index.js file
-import React from "react";
+// export to Props.js file
+// import React from "react";
+import PropTypes from "prop-types";
 
 function Person(props) {
   return (
@@ -10,5 +11,11 @@ function Person(props) {
     </>
   );
 }
+
+// PropTypes
+Person.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
+};
 
 export default Person;
