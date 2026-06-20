@@ -1,7 +1,7 @@
 import "./App.css";
-// import Header from "./Header";
-// import Sidebar from "./Sidebar";
-// import Footer from "./Footer";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
 // import PropTypes from "prop-types";
 import React from "react";
 // import React, { Component } from "react";
@@ -11,8 +11,11 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h1>Abdul Moeez Tariq</h1>
-        <h2>Learning React.js</h2>
+        <Header />
+        {/* <h1>Abdul Moeez Tariq</h1> */}
+        <Sidebar />
+        {/* <h2>Learning React.js</h2> */}
+        <Footer />
       </>
     );
   }
