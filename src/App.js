@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import Header from "./components/Header";
+
 // import Sidebar from "./components/Sidebar";
 // import Footer from "./components/Footer";
 // import PropTypes from "prop-types";
@@ -26,6 +27,19 @@ import Header from "./components/Header";
 
 // // React Constructor
 // import Student from "./constructor/Student";
+
+// // State
+// import State from "./states/State";
+
+// Destructuring With Props
+// import WithProps from "./destructureProps&State/WithProps";
+
+// Destructuring With State
+// import WithState from "./destructureProps&State/WithState";
+
+// Events
+// import ClickEvent from "./events/ClickEvent";
+import BindingEventHandler from "./events/BindingEventHandler";
 
 // Class Component
 class App extends React.Component {
@@ -56,6 +70,26 @@ class App extends React.Component {
         {/* React.js Constructor */}
         {/* <Student /> */}
         {/* <Student name="Abdul Moeez Tariq" /> */}
+
+        {/* State & State with Props */}
+        {/* <State /> */}
+        {/* <State name="moizycodes" /> */}
+
+        {/* Destructuring With Props */}
+        {/* <WithProps
+          name="Abdul Moeez Tariq"
+          age={24}
+          designation="Full Stack Developer"
+        /> */}
+
+        {/* Destructuring With State */}
+        {/* <WithState name="Rameez" age={22} /> */}
+
+        {/* Events */}
+        {/* <ClickEvent /> */}
+        {/* Event using Props */}
+        {/* <ClickEvent name="Abdul Moeez" /> */}
+        <BindingEventHandler />
       </>
     );
   }
