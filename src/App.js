@@ -39,7 +39,11 @@ import Header from "./components/Header";
 
 // Events
 // import ClickEvent from "./events/ClickEvent";
-import BindingEventHandler from "./events/BindingEventHandler";
+// import BindingEventHandler from "./events/BindingEventHandler";
+
+// React Lifecycle Methods
+// import Mounting from "./reactLifecycle/Mounting";
+import Updating from "./reactLifecycle/Updating";
 
 // Class Component
 class App extends React.Component {
@@ -89,7 +93,11 @@ class App extends React.Component {
         {/* <ClickEvent /> */}
         {/* Event using Props */}
         {/* <ClickEvent name="Abdul Moeez" /> */}
-        <BindingEventHandler />
+        {/* <BindingEventHandler /> */}
+
+        {/* React Lifecycle Methods */}
+        <Mounting city="Lahore" />
+        <Updating />
       </>
     );
   }
