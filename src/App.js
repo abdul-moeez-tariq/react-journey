@@ -43,7 +43,8 @@ import Header from "./components/Header";
 
 // React Lifecycle Methods
 // import Mounting from "./reactLifecycle/Mounting";
-import Updating from "./reactLifecycle/Updating";
+// import Updating from "./reactLifecycle/Updating";
+import UpdatingMethods from "./reactLifecycle/UpdatingMethods";
 
 // Class Component
 class App extends React.Component {
@@ -96,8 +97,9 @@ class App extends React.Component {
         {/* <BindingEventHandler /> */}
 
         {/* React Lifecycle Methods */}
-        <Mounting city="Lahore" />
-        <Updating />
+        {/* <Mounting city="Lahore" /> */}
+        {/* <Updating /> */}
+        <UpdatingMethods city="Lahore" />
       </>
     );
   }
