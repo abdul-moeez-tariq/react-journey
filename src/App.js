@@ -44,7 +44,17 @@ import Header from "./components/Header";
 // React Lifecycle Methods
 // import Mounting from "./reactLifecycle/Mounting";
 // import Updating from "./reactLifecycle/Updating";
-import UpdatingMethods from "./reactLifecycle/UpdatingMethods";
+// import UpdatingMethods from "./reactLifecycle/UpdatingMethods";
+// import UnMountingParent from "./reactLifecycle/UnMountingParent";
+
+// PassingMethodAsProps
+// import ParentComponent from "./passingMethodAsProps/ParentComponent";
+
+// Condtional Rendering
+// import Conditionals from "./conditionalRendering/Conditionals";
+
+// List / Array Rendering
+import Students from "./listRendering/Students";
 
 // Class Component
 class App extends React.Component {
@@ -99,7 +109,17 @@ class App extends React.Component {
         {/* React Lifecycle Methods */}
         {/* <Mounting city="Lahore" /> */}
         {/* <Updating /> */}
-        <UpdatingMethods city="Lahore" />
+        {/* <UpdatingMethods city="Lahore" /> */}
+        {/* <UnMountingParent /> */}
+
+        {/* PassingMethodAsProps */}
+        {/* <ParentComponent /> */}
+
+        {/* Conditional Rendering */}
+        {/* <Conditionals /> */}
+
+        {/* List / Array Rendering */}
+        <Students />
       </>
     );
   }

@@ -33,9 +33,27 @@ export default class UpdatingMethods extends Component {
     // console.log("shouldComponentUpdate called ...");
     console.log(nextProps);
     console.log(nextState);
-    return false; // if false then the render function will not work
+    return true;
+    // return false; // if false then the render function will not work
   }
 
+  // 4 --- Updating Fourth Method ---
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("getSnapshotBeforeUpdate called...");
+    console.log(prevProps);
+    console.log(prevState);
+    return true;
+  }
+
+  // 5 --- Updating Fifth Method ---
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log("componentDidUpdate called...");
+    console.log(prevProps);
+    console.log(prevState);
+    console.log(snapshot);
+  }
+
+  // 3 --- Updating Third Method ---
   render() {
     return (
       <div>
