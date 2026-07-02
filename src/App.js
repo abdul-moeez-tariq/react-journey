@@ -6,20 +6,20 @@ import Header from "./components/Header";
 // import Footer from "./components/Footer";
 // import PropTypes from "prop-types";
 
-// Class Component
+// // Class Component
 // import MyClass from "./components/classComponents/MyClass";
 // import {
 //   // ClassProps,
 //   ClassPropsSecond,
 // } from "./components/classComponents/ClassProps";
 
-// Props in React
+// // Props in React
 // import Props from "./props/Props";
 
-// Arrow Functions in React
+// // Arrow Functions in React
 // import ArrowFunc from "./arrowFunctions/ArrowFunc";
 
-// Default Export vs Name Export
+// // Default Export vs Name Export
 // import AnyDefaultExport, {
 //   NamedExport,
 //   NamedExportTwo,
@@ -31,30 +31,36 @@ import Header from "./components/Header";
 // // State
 // import State from "./states/State";
 
-// Destructuring With Props
+// // Destructuring With Props
 // import WithProps from "./destructureProps&State/WithProps";
 
-// Destructuring With State
+// // Destructuring With State
 // import WithState from "./destructureProps&State/WithState";
 
-// Events
+// // Events
 // import ClickEvent from "./events/ClickEvent";
 // import BindingEventHandler from "./events/BindingEventHandler";
 
-// React Lifecycle Methods
+// // React Lifecycle Methods
 // import Mounting from "./reactLifecycle/Mounting";
 // import Updating from "./reactLifecycle/Updating";
 // import UpdatingMethods from "./reactLifecycle/UpdatingMethods";
 // import UnMountingParent from "./reactLifecycle/UnMountingParent";
 
-// PassingMethodAsProps
+// // PassingMethodAsProps
 // import ParentComponent from "./passingMethodAsProps/ParentComponent";
 
-// Condtional Rendering
+// // Condtional Rendering
 // import Conditionals from "./conditionalRendering/Conditionals";
 
-// List / Array Rendering
-import Students from "./listRendering/Students";
+// // List / Array Rendering
+// import Students from "./listRendering/Students";
+
+// // List & Keys
+// import ListWithKeys from "./list&Keys/ListWithKeys";
+
+// // Style Components
+import StyleComponents from "./styleComponents/StyleComponents";
 
 // Class Component
 class App extends React.Component {
@@ -119,7 +125,13 @@ class App extends React.Component {
         {/* <Conditionals /> */}
 
         {/* List / Array Rendering */}
-        <Students />
+        {/* <Students /> */}
+
+        {/* List & Keys */}
+        {/* <ListWithKeys /> */}
+
+        {/* Style Components */}
+        <StyleComponents />
       </>
     );
   }
