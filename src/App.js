@@ -60,7 +60,15 @@ import Header from "./components/Header";
 // import ListWithKeys from "./list&Keys/ListWithKeys";
 
 // // Style Components
-import StyleComponents from "./styleComponents/StyleComponents";
+// import StyleComponents from "./styleComponents/StyleComponents";
+// import CssStyleSheet from "./styleComponents/CssStyleSheet";
+
+// // CSS Modules
+// import Stylesheet1 from "./styleComponents/CSSModules/Stylesheet1";
+// import StyleSheet2 from "./styleComponents/CSSModules/StyleSheet2";
+
+// // Bootstrap Added
+import BsComponent from "./BootstrapComponents/BsComponent";
 
 // Class Component
 class App extends React.Component {
@@ -130,8 +138,15 @@ class App extends React.Component {
         {/* List & Keys */}
         {/* <ListWithKeys /> */}
 
-        {/* Style Components */}
-        <StyleComponents />
+        {/* Style Components in React */}
+        {/* <StyleComponents /> */}
+        {/* <CssStyleSheet check={true} /> */}
+
+        {/* CSS Modules */}
+        {/* <Stylesheet1 />
+        <StyleSheet2 /> */}
+
+        <BsComponent />
       </>
     );
   }

@@ -1,0 +1,14 @@
+/* External Style Sheets */
+
+.myFont {
+  padding: 10px;
+  color: red;
+}
+
+.myFont2 {
+  background-color: blue;
+}
+
+.myFont3 {
+  font-family: "Times New Roman", Times, serif;
+}
