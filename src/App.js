@@ -68,7 +68,14 @@ import Header from "./components/Header";
 // import StyleSheet2 from "./styleComponents/CSSModules/StyleSheet2";
 
 // // Bootstrap Added
-import BsComponent from "./BootstrapComponents/BsComponent";
+// import BsComponent from "./BootstrapComponents/BsComponent";
+
+// useState Hook
+// import UseStateWithStrings from "./hooks/useState/UseStateWithStrings";
+// import UseStateWithNumbers from "./hooks/useState/UseStateWithNumbers";
+// import UseStateWithObjects from "./hooks/useState/UseStateWithObjects";
+// import UseStateWithArray from "./hooks/useState/UseStateWithArray";
+import UseStateWithClassComponent from "./hooks/useState/UseStateWithClassComponent";
 
 // Class Component
 class App extends React.Component {
@@ -146,7 +153,15 @@ class App extends React.Component {
         {/* <Stylesheet1 />
         <StyleSheet2 /> */}
 
-        <BsComponent />
+        {/* Bootstrap */}
+        {/* <BsComponent /> */}
+
+        {/* useState Hook */}
+        {/* <UseStateWithStrings /> */}
+        {/* <UseStateWithNumbers /> */}
+        {/* <UseStateWithObjects /> */}
+        {/* <UseStateWithArray /> */}
+        <UseStateWithClassComponent />
       </>
     );
   }
