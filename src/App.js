@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { createContext } from "react";
 import Header from "./components/Header";
 
 // import Sidebar from "./components/Sidebar";
@@ -75,7 +75,23 @@ import Header from "./components/Header";
 // import UseStateWithNumbers from "./hooks/useState/UseStateWithNumbers";
 // import UseStateWithObjects from "./hooks/useState/UseStateWithObjects";
 // import UseStateWithArray from "./hooks/useState/UseStateWithArray";
-import UseStateWithClassComponent from "./hooks/useState/UseStateWithClassComponent";
+// import UsingStateWithClassComponent from "./hooks/useState/UsingStateWithClassComponent";
+// import UsingStateWithFunctionComponent from "./hooks/useState/UsingStateWithFunctionComponent";
+
+// useEffect Hook
+// import UseEffectWithFunctionComponent from "./hooks/useEffect/UseEffectWithFunctionComponent";
+// import ExampleUseEffect from "./hooks/useEffect/ExampleUseEffect";
+// import ExampleFetchAPIWithUseEffect from "./hooks/useEffect/ExampleFetchAPIWithUseEffect";
+// import ConditionallyRunUseEffect from "./hooks/useEffect/ConditionallyRunUseEffect";
+
+// useContext Hook
+import ComponentA from "./hooks/useContext/ComponentA";
+
+// Create Context
+export const NameContext = createContext();
+
+// Designation Context
+export const DesignationContext = createContext();
 
 // Class Component
 class App extends React.Component {
@@ -161,7 +177,23 @@ class App extends React.Component {
         {/* <UseStateWithNumbers /> */}
         {/* <UseStateWithObjects /> */}
         {/* <UseStateWithArray /> */}
-        <UseStateWithClassComponent />
+        {/* <UsingStateWithClassComponent /> */}
+        {/* <UsingStateWithFunctionComponent /> */}
+
+        {/* useEffect Hook */}
+        {/* <UseEffectWithFunctionComponent /> */}
+        {/* <ExampleUseEffect /> */}
+        {/* <ExampleFetchAPIWithUseEffect /> */}
+        {/* <ConditionallyRunUseEffect /> */}
+
+        {/* useContext Hook - Sending Props to the last Child Component */}
+        <NameContext.Provider value={"Abdul Moeez"}>
+          <DesignationContext.Provider
+            value={"Full Stack JavaScript Developer"}
+          >
+            <ComponentA />
+          </DesignationContext.Provider>
+        </NameContext.Provider>
       </>
     );
   }
