@@ -1,5 +1,6 @@
 import "./App.css";
-import React, { createContext } from "react";
+import React from "react";
+// import React, { createContext } from "react";
 import Header from "./components/Header";
 
 // import Sidebar from "./components/Sidebar";
@@ -83,15 +84,19 @@ import Header from "./components/Header";
 // import ExampleUseEffect from "./hooks/useEffect/ExampleUseEffect";
 // import ExampleFetchAPIWithUseEffect from "./hooks/useEffect/ExampleFetchAPIWithUseEffect";
 // import ConditionallyRunUseEffect from "./hooks/useEffect/ConditionallyRunUseEffect";
+import UseEffectUsingAsyncAwait from "./hooks/useEffect/UseEffectUsingAsyncAwait";
 
 // useContext Hook
-import ComponentA from "./hooks/useContext/ComponentA";
+// import ComponentA from "./hooks/useContext/ComponentA";
 
-// Create Context
-export const NameContext = createContext();
+// React Forms
+// import ReactForm from "./formHandling/ReactForm";
 
-// Designation Context
-export const DesignationContext = createContext();
+// // Create Context
+// export const NameContext = createContext();
+
+// // Designation Context
+// export const DesignationContext = createContext();
 
 // Class Component
 class App extends React.Component {
@@ -185,15 +190,19 @@ class App extends React.Component {
         {/* <ExampleUseEffect /> */}
         {/* <ExampleFetchAPIWithUseEffect /> */}
         {/* <ConditionallyRunUseEffect /> */}
+        <UseEffectUsingAsyncAwait />
 
         {/* useContext Hook - Sending Props to the last Child Component */}
-        <NameContext.Provider value={"Abdul Moeez"}>
+        {/* <NameContext.Provider value={"Abdul Moeez"}>
           <DesignationContext.Provider
             value={"Full Stack JavaScript Developer"}
           >
             <ComponentA />
           </DesignationContext.Provider>
-        </NameContext.Provider>
+        </NameContext.Provider> */}
+
+        {/* React Forms */}
+        {/* <ReactForm /> */}
       </>
     );
   }
