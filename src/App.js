@@ -1,7 +1,9 @@
 import "./App.css";
 import React from "react";
 // import React, { createContext } from "react";
-import Header from "./components/Header";
+// import Header from "./components/Header";
+
+// import Login from "./pages/Login";
 
 // import Sidebar from "./components/Sidebar";
 // import Footer from "./components/Footer";
@@ -84,13 +86,13 @@ import Header from "./components/Header";
 // import ExampleUseEffect from "./hooks/useEffect/ExampleUseEffect";
 // import ExampleFetchAPIWithUseEffect from "./hooks/useEffect/ExampleFetchAPIWithUseEffect";
 // import ConditionallyRunUseEffect from "./hooks/useEffect/ConditionallyRunUseEffect";
-import UseEffectUsingAsyncAwait from "./hooks/useEffect/UseEffectUsingAsyncAwait";
+// import UseEffectUsingAsyncAwait from "./hooks/useEffect/UseEffectUsingAsyncAwait";
 
 // useContext Hook
 // import ComponentA from "./hooks/useContext/ComponentA";
 
 // React Forms
-// import ReactForm from "./formHandling/ReactForm";
+import ReactForm from "./reactForms/ReactForm";
 
 // // Create Context
 // export const NameContext = createContext();
@@ -103,7 +105,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        {/* <Header /> */}
+        {/* <Login /> */}
         {/* <h1>Abdul Moeez Tariq</h1> */}
         {/* <Sidebar /> */}
         {/* <h2>Learning React.js</h2> */}
@@ -190,7 +193,7 @@ class App extends React.Component {
         {/* <ExampleUseEffect /> */}
         {/* <ExampleFetchAPIWithUseEffect /> */}
         {/* <ConditionallyRunUseEffect /> */}
-        <UseEffectUsingAsyncAwait />
+        {/* <UseEffectUsingAsyncAwait /> */}
 
         {/* useContext Hook - Sending Props to the last Child Component */}
         {/* <NameContext.Provider value={"Abdul Moeez"}>
@@ -202,7 +205,7 @@ class App extends React.Component {
         </NameContext.Provider> */}
 
         {/* React Forms */}
-        {/* <ReactForm /> */}
+        <ReactForm />
       </>
     );
   }
