@@ -92,7 +92,10 @@ import React from "react";
 // import ComponentA from "./hooks/useContext/ComponentA";
 
 // React Forms
-import ReactForm from "./reactForms/ReactForm";
+// import ReactForm from "./reactForms/ReactForm";
+// import ReactFormValidations from "./reactForms/ReactFormValidations";
+// import RealtimeFormValidation from "./reactForms/RealtimeFormValidation";
+import RegistrationForm from "./reactForms/RegistrationForm";
 
 // // Create Context
 // export const NameContext = createContext();
@@ -205,7 +208,10 @@ class App extends React.Component {
         </NameContext.Provider> */}
 
         {/* React Forms */}
-        <ReactForm />
+        {/* <ReactForm /> */}
+        {/* <ReactFormValidations /> */}
+        {/* <RealtimeFormValidation /> */}
+        <RegistrationForm />
       </>
     );
   }
