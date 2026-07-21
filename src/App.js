@@ -73,7 +73,7 @@ import React from "react";
 // // Bootstrap Added
 // import BsComponent from "./BootstrapComponents/BsComponent";
 
-// useState Hook
+// // useState Hook
 // import UseStateWithStrings from "./hooks/useState/UseStateWithStrings";
 // import UseStateWithNumbers from "./hooks/useState/UseStateWithNumbers";
 // import UseStateWithObjects from "./hooks/useState/UseStateWithObjects";
@@ -81,21 +81,25 @@ import React from "react";
 // import UsingStateWithClassComponent from "./hooks/useState/UsingStateWithClassComponent";
 // import UsingStateWithFunctionComponent from "./hooks/useState/UsingStateWithFunctionComponent";
 
-// useEffect Hook
+// // useEffect Hook
 // import UseEffectWithFunctionComponent from "./hooks/useEffect/UseEffectWithFunctionComponent";
 // import ExampleUseEffect from "./hooks/useEffect/ExampleUseEffect";
 // import ExampleFetchAPIWithUseEffect from "./hooks/useEffect/ExampleFetchAPIWithUseEffect";
 // import ConditionallyRunUseEffect from "./hooks/useEffect/ConditionallyRunUseEffect";
 // import UseEffectUsingAsyncAwait from "./hooks/useEffect/UseEffectUsingAsyncAwait";
 
-// useContext Hook
+// // useContext Hook
 // import ComponentA from "./hooks/useContext/ComponentA";
 
-// React Forms
+// // React Forms
 // import ReactForm from "./reactForms/ReactForm";
 // import ReactFormValidations from "./reactForms/ReactFormValidations";
 // import RealtimeFormValidation from "./reactForms/RealtimeFormValidation";
-import RegistrationForm from "./reactForms/RegistrationForm";
+// import RegistrationForm from "./reactForms/RegistrationForm";
+
+// // React Form  With Controlled Components
+// import ControlledFunction from "./reactForms/controlledComponent/ControlledFunction";
+import HandleMultipleInputs from "./reactForms/controlledComponent/HandleMultipleInputs";
 
 // // Create Context
 // export const NameContext = createContext();
@@ -211,7 +215,11 @@ class App extends React.Component {
         {/* <ReactForm /> */}
         {/* <ReactFormValidations /> */}
         {/* <RealtimeFormValidation /> */}
-        <RegistrationForm />
+        {/* <RegistrationForm /> */}
+
+        {/* React Forms With Controlled Components */}
+        {/* <ControlledFunction /> */}
+        <HandleMultipleInputs />
       </>
     );
   }
