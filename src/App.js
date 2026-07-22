@@ -99,7 +99,8 @@ import React from "react";
 
 // // React Form  With Controlled Components
 // import ControlledFunction from "./reactForms/controlledComponent/ControlledFunction";
-import HandleMultipleInputs from "./reactForms/controlledComponent/HandleMultipleInputs";
+// import HandleMultipleInputs from "./reactForms/controlledComponent/HandleMultipleInputs";
+import MultipleInputsWithClassComponent from "./reactForms/controlledComponent/MultipleInputsWithClassComponent";
 
 // // Create Context
 // export const NameContext = createContext();
@@ -219,7 +220,8 @@ class App extends React.Component {
 
         {/* React Forms With Controlled Components */}
         {/* <ControlledFunction /> */}
-        <HandleMultipleInputs />
+        {/* <HandleMultipleInputs /> */}
+        <MultipleInputsWithClassComponent />
       </>
     );
   }
