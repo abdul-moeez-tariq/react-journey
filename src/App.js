@@ -82,7 +82,7 @@ import React from "react";
 // import UsingStateWithFunctionComponent from "./hooks/useState/UsingStateWithFunctionComponent";
 
 // // useEffect Hook
-// import UseEffectWithFunctionComponent from "./hooks/useEffect/UseEffectWithFunctionComponent";
+import UseEffectWithFunctionComponent from "./hooks/useEffect/UseEffectWithFunctionComponent";
 // import ExampleUseEffect from "./hooks/useEffect/ExampleUseEffect";
 // import ExampleFetchAPIWithUseEffect from "./hooks/useEffect/ExampleFetchAPIWithUseEffect";
 // import ConditionallyRunUseEffect from "./hooks/useEffect/ConditionallyRunUseEffect";
@@ -100,7 +100,7 @@ import React from "react";
 // // React Form  With Controlled Components
 // import ControlledFunction from "./reactForms/controlledComponent/ControlledFunction";
 // import HandleMultipleInputs from "./reactForms/controlledComponent/HandleMultipleInputs";
-import MultipleInputsWithClassComponent from "./reactForms/controlledComponent/MultipleInputsWithClassComponent";
+// import MultipleInputsWithClassComponent from "./reactForms/controlledComponent/MultipleInputsWithClassComponent";
 
 // // Create Context
 // export const NameContext = createContext();
@@ -197,7 +197,7 @@ class App extends React.Component {
         {/* <UsingStateWithFunctionComponent /> */}
 
         {/* useEffect Hook */}
-        {/* <UseEffectWithFunctionComponent /> */}
+        <UseEffectWithFunctionComponent />
         {/* <ExampleUseEffect /> */}
         {/* <ExampleFetchAPIWithUseEffect /> */}
         {/* <ConditionallyRunUseEffect /> */}
@@ -221,7 +221,7 @@ class App extends React.Component {
         {/* React Forms With Controlled Components */}
         {/* <ControlledFunction /> */}
         {/* <HandleMultipleInputs /> */}
-        <MultipleInputsWithClassComponent />
+        {/* <MultipleInputsWithClassComponent /> */}
       </>
     );
   }

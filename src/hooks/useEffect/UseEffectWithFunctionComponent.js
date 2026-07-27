@@ -43,8 +43,7 @@
 
 // export default UseEffectWithFunctionComponent;
 
-// UseEffectWithFunctionComponent.js
-
+// --- UseEffectWithFunctionComponent.js ---
 import { useState, useEffect } from "react";
 
 function UseEffectWithFunctionComponent() {
@@ -58,10 +57,30 @@ function UseEffectWithFunctionComponent() {
   return (
     <div className="App">
       <h1>Count is: {count}</h1>
-      <button onClick={() => setCount((prevCount) => prevCount + 1)}>
+      <button
+        onClick={() => setCount((prevCount) => prevCount + 1)}
+        className="mt-2 p-2 text-white bg-blue-500 rounded-xl hover:bg-blue-600"
+      >
         Click {count} times
       </button>
     </div>
   );
 }
 export default UseEffectWithFunctionComponent;
+
+// // --- Cleanup Function ---
+// import React, { useEffect } from "react";
+
+// function UseEffectWithFunctionComponent() {
+//   useEffect(() => {
+//     console.log("Component Mounted");
+
+//     return () => {
+//       console.log("Component Unmounted");
+//     };
+//   }, []);
+
+//   return <div>Abdul Moeez Tariq</div>;
+// }
+
+// export default UseEffectWithFunctionComponent;
